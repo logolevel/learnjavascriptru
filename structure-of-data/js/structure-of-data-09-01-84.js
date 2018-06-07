@@ -1,5 +1,13 @@
-var arr = ["Яблоко", "Апельсин", "Груша"];
+var arr = ["Нет", "жизни", "на", "Марсе"];
 
-arr.forEach(function(item, i, arr) {
-    console.log( `${i}: ${item} array: ${arr}` );
+// var arrLength = [];
+// for (var i = 0; i < arr.length; i++) {
+//   arrLength[i] = arr[i].length;
+// }
+
+var arrLength = arr.map(function(name) {
+    return name.length;
 });
+
+console.log( arrLength );
+
