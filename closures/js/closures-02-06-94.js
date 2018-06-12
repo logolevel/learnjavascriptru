@@ -1,14 +1,17 @@
-function makeCounter() {
-    var currentCount = 1;
+var currentCount = 1;
 
+function makeCounter() {
     return function() {
         return currentCount++;
-    }
-    asd();
+    };
 }
 
 var counter = makeCounter();
+var counter2 = makeCounter();
 
 console.log( counter() );
 console.log( counter() );
 console.log( counter() );
+
+
+console.log( counter2() );
